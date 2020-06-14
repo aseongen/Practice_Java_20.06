@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+prefHeight="250.0" prefWidth="620.0" fx:controller="RootController09">
+  <padding>
+   <Insets top="10.0" right="10.0" bottom="10.0" left="10.0" />
+  </padding>
+ 
+   <center>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0" spacing="10">
+      <children>
+       <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="100.0"
+       spacing="20.0">
+        <CheckBox fx:id="chk1" onAction="#handleChkAction" text="안경" />
+        <CheckBox fx:id="chk2" onAction="#handleChkAction" text="모자" />
+        <!-- CheckBox 컨트롤은 복수개를 선택할 수 있는 네모 버튼을 만든다. -->        
+       </VBox>
+       
+       <ImageView fx:id="checkImageView" fitWidth="100.0" preserveRatio="true">
+       <!-- fitWidth는 이미지뷰의 폭을 지정, preserveRatio 속성은 이미지의 종횡비를 유지할 것인지를
+       지정한다. false로 지정하면 이미지 가로/세로 길이에 상관없이 fitWidth와 fitHeight에 맞게 이미지 뷰
+       크기가 고정되고,true로 지정하면 이미지의 종횡비(가로/세로)를 유지하기 위해서 이미지뷰 크기에 맞게 
+       조절된다.-->
+         <image><Image url="@images/geek.gif" /></image>
+       </ImageView>
+       
+       <Separator orientation="VERTICAL" prefHeight="100.0" />
+       <!-- 수직으로 100높이 만큼 분리선이 만들어 진다. -->
+       
+       <VBox alignment="CENTER_LEFT" prefHeight="100" prefWidth="150" spacing="20.0">
+        <children>
+          <RadioButton fx:id="rad1" text="BubbleChart" userData="BubbleChart">
+           <!-- RadioButton은 동그라미 버튼을 만들고,userData속성값은 자바프로그램에서 처리할 데이터 -->
+           <toggleGroup>
+            <ToggleGroup fx:id="group" />
+           </toggleGroup><!-- RadionButton을 토글그룹으로 묶어야 동그라미 버튼을 단 하나만 선택하는
+           효과가 난다. -->
+          </RadioButton>
+          <RadioButton fx:id="rad2" selected="true" text="BarChart" 
+          toggleGroup="$group" userData="BarChart" />
+          <!-- selected="true"로 설정되면 두번째 라디오 버튼이 미리 선택됨. toggleGroup속성값
+          $group으로 토글그룹  fx:id="group"명을 참조하면 RadioButton이 토글 그룹으로 묶어져서 단 하나
+          만 선택가능하게된다. toggleGroup="$groupName"-->
+          <RadioButton fx:id="rad3" text="AreaChart" toggleGroup="$group"
+          userData="AreaChart" />
+        </children>
+       </VBox>
+       
+       <ImageView fx:id="radioImageView" fitWidth="100.0" preserveRatio="true">
+        <image><Image url="@images/BarChart.png" /></image>
+       </ImageView>
+      </children>
+    </HBox>    
+   </center>
+   
+    <bottom>
+     <Button fx:id="btnExit" onAction="#handleBtnExitAction" 
+     BorderPane.alignment="CENTER">
+       <graphic><!-- graphic을 사용해서 버튼에 이미지를 넣는다.즉 버튼이미지 또는 이미지버튼,이미지
+       아이콘버튼을 만든다. -->
+         <ImageView>
+          <image>
+           <Image url="@images/exit.png" />
+          </image>
+         </ImageView>
+       </graphic>   
+       <BorderPane.margin><Insets top="20.0" /></BorderPane.margin>  
+       <!-- 버튼위 바깥 여백을 설정 -->
+     </Button>    
+    </bottom>
+</BorderPane>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

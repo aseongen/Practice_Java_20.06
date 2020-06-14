@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="RootController"
+      prefHeight="100.0" prefWidth="500.0" alignment="CENTER" spacing="20.0">
+  <!-- FXML 파일당 별도의 이벤트를 처리하는 RootController.java 파일을 만들어서 레이아웃에서 이벤트
+  처리 코드를 자바로 완전히 분리 -->
+  
+  <children>
+   <Button fx:id="btn1" text="버튼1" />
+   <Button fx:id="btn2" text="버튼2" onAction="#handleBtn2Action" />
+   <!-- RootController에 두번째 버튼은 이벤트 등록하지 않고 이벤트 발생시 해당 컨트롤로 클래스에서 정의한
+    handleBtn2Action()메서드를 바로 호출한다. onAction="#메서드명" -->
+    <Button fx:id="btn3" text="버튼3" />
+    <!-- fx:id속성값인 btn1,btn2,btn3은 RootController.java에서 필드명 즉 멤버변수명 이름으로 
+    정의된다. -->
+  </children>    
+</HBox>
+
+
+
+
+

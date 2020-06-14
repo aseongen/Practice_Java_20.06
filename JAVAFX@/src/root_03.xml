@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<TilePane xmlns:fx="http://javafx.com/fxml" prefTileHeight="100"
+prefTileWidth="100">
+<!-- TilePane 레이아웃은 고정된 셀(칸) 크기를 갖는 컨테이너이다. 오른쪽에 컨트롤 배치할 공간이
+부족하면 새로운 행에 컨트롤을 배치한다.  prefTileHeight TilePane 레이아웃의 높이를 설정.
+prefTileWidth 속성은 TilePane 레이아웃의 너비를 설정-->
+ <children>
+  <ImageView><!-- ImageView 컨트롤은 이미지 추가 -->
+    <image><Image url="@images/fruit1.jpg" /></image>
+    <!-- url속성값에 이미지 경로, @images는  images폴더명을 가리킴. 부모경로를 생략한 현재 폴더 기준으로
+    설정한 상대경로에 이미지 경로로 함. -->
+  </ImageView>
+  <ImageView>
+   <image><Image url="@images/fruit2.jpg" /></image>  
+  </ImageView>
+ </children>
+</TilePane>
+
+

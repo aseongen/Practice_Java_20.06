@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="RootController12"
+prefHeight="220.0" prefWidth="530.0">
+  <children>
+    <StackPane layoutX="10.0" layoutY="10.0">
+    <!-- StackPane 은 컨트롤을 겹쳐 배치하는 레이아웃이다. 흔히
+카드 레이아웃이라고 한다. 카드가 겹쳐 있는 것처럼 컨트롤도 겹쳐질 수 있다.-->
+      <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="360.0"
+      preserveRatio="false">
+       <!-- preserveRatio="false"는 이미지의 종횡비와 상관없이 fitHeight와 fitWidth에 맞게
+       이미지뷰 크기가 고정 -->
+        <image><Image url="@media/audio.png" /></image>
+      </ImageView>
+      
+      <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="360.0" 
+      preserveRatio="false" />
+      <!-- MediaView 컨트롤은 비디오를 보여주는 용도로 사용됨.  -->
+    </StackPane>
+  </children>
+  
+  <Button fx:id="btnPlay" layoutX="385.0" layoutY="15.0" prefHeight="23.0"
+  prefWidth="131.0" text="재생" />
+  <Button fx:id="btnPause" layoutX="385.0" layoutY="39.0" prefHeight="23.0"
+  prefWidth="131.0" text="멈춤" />
+  <Button fx:id="btnStop" layoutX="385.0" layoutY="63.0" prefHeight="23.0"
+  prefWidth="131.0" text="중지" />
+  
+ </AnchorPane>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

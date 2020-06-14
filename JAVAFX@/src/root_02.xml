@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+
+<FlowPane xmlns:fx="http://javafx.com/fxml" prefWidth="300.0" prefHeight="70.0"
+hgap="10.0" vgap="10.0">
+ <!-- FlowPane 레이아웃은 행으로 컨트롤을 배치하되 공간이 부족하면 새로운 행에 배치된다. 
+  vgap속성은 컨트롤의 수직간격을 설정. hgap속성은 컨트롤의 수평간격을 설정-->
+  <padding>
+   <Insets top="10.0" right="10.0" bottom="10.0" left="10.0" /><!-- 시계방향으로
+   위,오른쪽,아래쪽,왼쪽 안여백을 설정 -->
+  </padding>
+  
+  <children><!-- 레이아웃에 자식 컨트롤 추가 -->
+    <Button text="Button01" /><!-- 단독태그로 버튼 추가.text속성값은 버튼위의 캡션문자열을 설정 -->
+    <Button text="Button02" />
+    <Button text="Button03" />
+    <Button text="Button04" />
+    <Button text="Button05" />
+  </children>
+</FlowPane>
+ 
+ 
+ 
+ 
+ 
+ 
+ 

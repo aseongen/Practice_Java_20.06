@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:id="root"
+            fx:controller="RootController08" prefHeight="200.0" prefWidth="300.0">
+<!-- 
+1.AnchorPane은 컨트롤을 좌표로 배치하는 레이아웃
+ -->            
+   <children>
+    <Circle fx:id="circle" fill="blue" radius="50.0" stroke="BLACK" />
+    <!-- Circle은 원 컨트롤, fill속성은 채우기 색, radius속성은 반지름, stroke속성은 테두리 선색 -->
+   </children>
+</AnchorPane> 

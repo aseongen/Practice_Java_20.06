@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" prefWidth="300.0" hgap="10.0" vgap="10.0">
+<!-- hgap속성은 수평 컨트롤 간격, vgap속성은 수직 컨트롤 간격 -->
+ <!-- GridPane 레이아웃(컨테이너)은 컨트롤을 배치하되 칸의 크기가 고정적이지 않고 유동적이다. 셀(칸) 병합
+ 이 가능하기 때문에 다양한 입력폼 화면을 만들 때 매우 유용하다.각 컨트롤이 배치될 자신의 행,열 인덱스 번호를 
+ 가진다.몇개의 셀을 병합할 것인지도 지정할 수 있다. -->
+   <padding>
+    <Insets topRightBottomLeft="10.0" /><!-- 상하좌우 안여백을 동시에 지정 -->
+   </padding>
+   
+   <children>
+     <Label text="아이디" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+     <!--  GridPane.rowIndex 속성은 컨트롤이 위치하는 행 인덱스 번호. 
+           GridPane.columnIndex 속성은 컨트롤이 위치하는 열(컬럼) 인덱스 번호.-->
+     <TextField GridPane.rowIndex="0" GridPane.columnIndex="1" 
+     GridPane.hgrow="ALWAYS" />
+     <!-- GridPane.hgrow="ALWAYS" 속성은 수평 빈 공간 즉 오른쪽 빈공간까지 채우면서 확장. -->
+     
+     <Label text="비밀번호" GridPane.rowIndex="1" GridPane.columnIndex="0"  />
+      <TextField GridPane.rowIndex="1" GridPane.columnIndex="1" 
+     GridPane.hgrow="ALWAYS" />     
+     
+     <HBox GridPane.rowIndex="2" GridPane.columnIndex="0"
+           GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" alignment="CENTER"
+           spacing="20.0">
+      <!-- GridPane.columnSpan="2" 속성은 2개열을 합침. alignment="CENTER"는 중앙정렬.
+      spacing="20.0"는 컨트롤 간격-->
+      <children>
+       <Button text="로그인" /> <Button text="취소" />
+      </children>     
+    </HBox>
+   </children>
+</GridPane>
+
+
+
+
+
+

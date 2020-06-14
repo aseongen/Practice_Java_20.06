@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" prefHeight="200.0" prefWidth="300.0">
+<!-- 
+  1. BorderPane 레이아웃(컨테이너)은 top(위),bottom(아래),left(왼쪽),right(오른쪽),center(중앙)
+   셀(칸)에 컨트롤을 배치한다.
+  2.prefHeight속성은 해당 레이아웃 높이, prefWidth속성은 레이아웃 너비 
+ -->
+ <!-- 위쪽 툴바에 버튼 2개 배치 -->
+ <top>
+   <ToolBar>
+    <Button text="Button" /><!-- 본문내용없는 단독 Button태그로 버튼생성 -->
+    <Button text="Button" />
+   </ToolBar>   
+ </top>
+ 
+ <!-- left,right를 지정하지 안았기 때문에 왼쪽,오른쪽 까지 확장 .
+ 중앙에 TextArea를 배치-->
+ <center>
+   <TextArea /><!-- TextArea 컨트롤은 한줄 입력박스를 만듬. -->
+ </center>
+ 
+ <!-- 아래쪽 중앙에 TextField,아래 오른쪽에 버튼배치  -->
+ <bottom>
+  <BorderPane><!-- 바깥 BorderPane레이아웃 안 아래쪽에 BorderPane레이아웃이 배치 -->
+   <center><TextField /></center><!-- TextField는 한줄 입력박스 -->
+   <right><Button text="저장"/></right>
+  </BorderPane>
+ </bottom>
+</BorderPane>
+
+
+
+
+
+
+
+
+
+
+

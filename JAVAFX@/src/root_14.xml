@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="RootController14"
+prefHeight="250" prefWidth="850">
+  <children>
+   <PieChart fx:id="pieChart" /><!-- x축과 y축이 없으므로 축정의가 필요없다. 파이차트 정의 -->
+   
+   <BarChart fx:id="barChart"><!-- BarChart 정의. x와 y축이 필요하므로 축정의가 있어야 한다. -->
+    <xAxis><!-- x축정의 -->
+     <CategoryAxis side="BOTTOM" /><!-- 분류눈금을 아래쪽에 나타낸다. -->
+    </xAxis>
+    
+    <yAxis><!-- y축정의 -->
+     <NumberAxis side="LEFT" /><!-- 숫자 눈금을 왼쪽 축에 나타내게 한다. -->    
+    </yAxis>
+   </BarChart>
+   
+   <AreaChart fx:id="areaChart"><!-- AreaChart정의. x와 y축이 필요하므로 축정의가 있어야 한다. -->
+     <xAxis><!-- x축정의 -->
+       <CategoryAxis side="BOTTOM" /><!-- 분류눈금을 아래쪽에 나타낸다. -->
+      </xAxis>
+    
+      <yAxis><!-- y축정의 -->
+        <NumberAxis side="LEFT" /><!-- 숫자 눈금을 왼쪽 축에 나타내게 한다. -->    
+      </yAxis>
+   </AreaChart>
+  </children>
+</HBox>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="RootController13"
+	prefHeight="220.0" prefWidth="530.0" >
+	
+   <children>
+ 		<StackPane layoutX="10.0" layoutY="10.0">
+ 		<!-- StackPane 은 컨트롤을 겹쳐 배치하는 레이아웃이다. 흔히 카드 레이아웃이라고 한다. 카드가 겹쳐 있는 것처럼 컨트롤도 겹쳐질 수 있다. 만약 위에 있는 컨트롤이 투명이라면 밑에 있는 컨트롤이 겹쳐 보이게 된다.
+ 		 -->
+		   <children>
+		      <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="360.0"  preserveRatio="false">
+		      <!-- preserveRatio 속성은 이미지의 종횡비를 유지할 것인지를 지정한다. false로 주면 종횡비와 상관없이 fitWidth와 fitHeight에 맞게 ImageView 크기가 고정  -->
+		         <image><Image url="@media/audio.png" /></image>
+		      </ImageView>  
+		      <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="360.0" preserveRatio="false" />  
+		      <!-- MediaView 컨트롤은 비디오를 보여주는 용도로만 사용. 레이아웃 상에서 비디오가 위치할 영역을 표시. preserveRatio 속성은 비디오의 가로-세로비를 유지할 것인지를 지정하는데, false로 지정하면
+		 비디오의 가로/세로비에 상관없이 fitWidth,fitHeight에 맞게 MediaView의 크기가 고정됨. MediaView는 비디오를 재생할 수 있는 기능이 없다. 미디어를 재생하는 MediaPlayer가 있어야 한다. 미디어
+		 플레이어는 오디오도 재생하는 기능이 있다. -->  
+		   </children>
+		</StackPane>
+		
+		<Button fx:id="btnPlay" layoutX="385.0" layoutY="15.0" prefHeight="23.0" prefWidth="131.0" text="재생" />
+		<Button fx:id="btnPause" layoutX="385.0" layoutY="39.0" prefHeight="23.0" prefWidth="131.0" text="멈춤"/>      
+		<Button fx:id="btnStop" layoutX="385.0" layoutY="63.0" prefHeight="23.0" prefWidth="131.0" text="중지"/>	
+   
+		<Label layoutX="387.0" layoutY="101.0" text="시간" />
+		<ProgressBar fx:id="progressBar" layoutX="385.0" layoutY="121.0" prefHeight="18.0" prefWidth="98.0" progress="0.0" />
+		<!-- ProgressBar는 수평막대 모양의 컨트롤, progress속성은 진행 정도 설정, 최소값은 0.0이고 최대값은 1.0 -->
+		<ProgressIndicator fx:id="progressIndicator" layoutX="489.0" layoutY="112.0" prefHeight="47.0" prefWidth="31.0" progress="0.0" /> 	
+		<!-- ProgressIndicator는 원형 모양의 컨트롤. 둘다 작업의 진행 정도를 표시, 미디어의 재생시간을 표시하거나,저장소의 사용량 및 네트워크 통신량을 표시할 때도 사용한다. -->	    	
+		<Label fx:id="labelTime" alignment="CENTER" layoutX="386.0" layoutY="142.0" prefHeight="18.0" prefWidth="98.0" text="0/0 sec" />     
+		 
+		<Label layoutX="385.0" layoutY="169.0" text="소리" />
+		<Slider fx:id="sliderVolume" layoutX="385.0" layoutY="187.0" prefHeight="14.0" prefWidth="131.0"  showTickMarks="true"/>
+		<!-- showTickMarks="true"로 설정하면 눈금 볼수가 있다. -->
+   </children>
+   
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="RootController11"
+	prefHeight="180.0" prefWidth="500.0" >
+   <children>
+      <Label layoutX="11.0" layoutY="9.0" text="ListView" />
+      <ListView fx:id="listView" layoutX="10.0" layoutY="30.0" prefHeight="100.0" prefWidth="100.0" />
+      
+      <Label layoutX="125.0" layoutY="9.0" text="TableView" />
+      <TableView fx:id="tableView" layoutX="120.0" layoutY="30.0" prefHeight="100.0" prefWidth="290.0">
+        <columns><!-- 테이블 컬럼 열이름 지정 -->
+          <TableColumn prefWidth="100.0" text="스마트폰" />
+          <TableColumn prefWidth="100.0" text="이미지" />
+        </columns>
+      </TableView>
+      
+      <Label layoutX="425.0" layoutY="9.0" text="ImageView" />
+      <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="60.0" layoutX="430.0" layoutY="30.0" preserveRatio="true" />
+      <!-- 
+        1. fitWidth와 fitHeight로 이미지 뷰 폭과 높이를 지정한다.
+        2. preserveRatio 속성은 이미지의 종횡비를 유지할 것인지를 지정한다. false로 주면 종횡비와 상관없이 fitWidth와 fitHeight에 맞게 ImageView 크기가 고정되고
+        , true로 설정하면 이미지의 종횡비를 유지하기 위해  ImageView 크기가 조정된다.
+       -->
+      
+      <Button layoutX="190.0" layoutY="145.0" onAction="#handleBtnOkAction" text="확인" />
+      <Button layoutX="260.0" layoutY="145.0" onAction="#handleBtnCancelAction" text="취소" />
+   </children>
+</AnchorPane>
