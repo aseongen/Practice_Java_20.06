@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 폼</title>
+</head>
+<body>
+<form>
+ <table border="1">
+  <tr> <th colspan="2">회원가입</th> </tr>
+  <tr> <th>아이디</th> 
+  <td><input type="text" name="id" size="14" />
+       <input type="button" value="아이디 중복체크" /></td></tr>
+  <tr><th>비밀번호</th><td><input type="password" name="pwd" size="14" /></td></tr>
+  
+  <tr><th>비밀번호 확인</th><td> 
+      <input type="password" name="pwd_chk" size="14" /></td></tr>
+      
+  <tr><th>이름</th><td><input type="text" name="name" size="14" /></td></tr>
+  
+  <tr><th>이메일</th>
+   <td><input type="text" name="email_id" size="14" />@
+   <select name="email_domain">
+    <option value="직접입력">직접입력</option>
+    <option value="naver.com">네이버</option>
+    <option value="daum.net">한메일</option>
+    <option value="nate.com">네이트</option></select></tr>
+    
+  <tr><th>폰번호</th> <td><input type="tel" name="phone" size="14" /></td></tr>
+  <tr><th>성별</th>
+    <td><input type="radio" name="gender" value="male" />남자
+        <input type="radio" name="gender" value="female" />여자</td></tr>
+  <tr><th colspan="2">
+   <input type="submit" value="가입" /><input type="reset" value="취소" /></th>
+  </tr>
+ </table>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
