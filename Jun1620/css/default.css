@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/* 메인화면 index.jsp ui */
+body{
+	background-color:#898989;
+	margin:0px; padding:0px;
+	font-size:0.75em; line-height:1.2em;/* 수직간의 문장 사이의 줄간격,
+	텍스트 줄의 높이를 지정 */
+	color:#333;/* 16진수 색상코드에서 #333은 #333333 와 같다. */
+}
+#wrap{
+	width:971px; text-align: left;/*글자 왼쪽 수평정렬*/
+	margin:0px;  
+	margin-left:auto; margin-right:auto;/*div 레이아웃 수평중앙정렬*/
+	background-image:url(../images/shadow.png);
+	background-repeat:repeat-y;/*y축으로 반복*/
+	min-height:780px;/*최소높이를 지정*/
+}
+#logo{
+	float:left;/* 왼쪽에배치*/ width:265px;
+    margin:60px 0px 0px 40px;/*시계방향으로 위,오른쪽,아래쪽,왼쪽 바깥여백을
+    지정*/	
+}
+header{
+	height:151px;
+}
+nav{
+	width:600px; margin:70px 20px 0px 0px;
+	float:right;/*오른쪽 배치*/
+}
+nav ul{
+    list-style:none;/*목록앞 점 없앰*/
+    font-family: Verdana, Geneva,sans-serif;
+    font-size:13px; font-weight:100;/*글자 진하게*/
+    color:#333;	
+}
+nav ul li{
+	float:left;/* 목록 수직정렬을 수평정렬로 변경*/
+	margin:0px 5px;/*바깥 상하 여백은 0px,좌우 바깥여백은 5픽셀*/
+}
+nav a{
+	display:block; height:20px; padding:10px;
+	text-decoration: none;/*밑줄 선 없앰*/ color:#333;
+}
+nav a:hover{/*하이퍼링크 된곳 마우스 오버시 css효과*/
+	background-image:url(../images/blue.gif);
+	background-repeat:repeat-x;/*이미지가 x축으로 반복*/
+	background-position: bottom;/*아래쪽에 배치*/
+}
+#login{
+	float:right; margin:20px 64px 0px 0px;
+	font-family:Arial, Helvetica,sans-serif;
+	font-size:12px;
+	word-spacing:5px;/*단어 간격*/
+}
+#login a{
+	text-decoration: none;/*하이퍼링크 걸린곳 밑줄 선 없앰*/
+	color:#333;
+}
+#login a:hover{ color:#F90;}
+.clear{clear:both;/* float속성을 제거해서 div간 잘못된 css적용을 막아줌*/}
+
+#main_img{
+	width:971px;height:308;
+	background-image:url(../images/img_back.png);
+	background-repeat:no-repeat;/*이미지 반복안하고 한번만 출력*/
+	background-position:center top;/*중앙 상단 배치*/
+}
+#main_img img{margin-top:9px;}
+
+/*메인본문 ui*/
+article#front{
+	margin:5px 0px 5px 0px;
+	
+}
+#solution{
+	border:1px solid #FFF; border-radius:10px;
+	/*css3에 추가된속성으로 테두리를 둥글게*/
+	width:910px; min-height:150px;
+	background:#ebebed; padding:10px; margin-left:20px;
+	
+}
+/*문제) solution 영역이 왼쪽으로 쏠림을  ui를 해결하고
+그 안쪽 3개의 div너비를 상대적크기30%, 상하좌우 안여백을 10px로 처리하고 수평정리 하자
+*/
+#hosting,#security,#payment{
+	width:30%; padding:10px; float:left;
+	/* 복수개의 div 수직정렬을 수평정렬로 변경*/
+}
+#hosting h3, #security h3, #payment h3{
+	font-size:14px; font-weight:600; color:#333;
+	margin:0px 0px 10px 80px;
+}
+#hosting p, #security p, #payment p{
+	fonr-family:"궁서체"; font-size:12px; color:#333;
+	margin:0px 0px 10px 80px;
+}
+#hosting{
+	background-image:url(../images/icon1.png);
+	background-repeat:no-repeat;
+	background-position:left 15px;/*화면 왼쪽 위에서 5픽셀 밑으로 위치*/
+	border-right:1px solid; border-color:#ccc;
+	margin-left:14px;
+}
+#security{
+	background-image:url(../images/icon2.png);
+	background-repeat:no-repeat;
+	background-position:left 15px;
+	border-right:1px solid; border-color:#ccc;
+	margin-left:14px;
+}
+#payment{
+	background-image:url(../images/icon3.png);
+	background-repeat:no-repeat;
+	background-position:left 15px;
+}
+#hosting,#security{
+	border-right:1px solid #ccc;
+}
+#sec_news,#news_notice{
+	float:left;width:420px; margin:15px 0px 0px 20px;
+}
+#sec_news h3, #news_notice h3{
+	font-size:14px; font-style:italic;/*기울임*/
+	font-weight:normal; width:420px; height:24px;
+	background-image:url(../images/h3_back.jpg);
+	background-repeat:no-repeat;
+	padding:5px 0px 0px 22px; /*시계 방향으로 안쪽 위, 오른쪽, 아래쪽, 왼쪽 여백을 동시에 저장*/
+}
+#sec_news.orange{color:#f26522;}
+#news_notice.brown{color:#827b00;}
+
+#sec_news dl{margin-left:6px;/*바깥왼쪽 여백지정, 들여쓰기*/}
+#sec_news dt{font-family:"굴림체"; font-size:16px;
+margin:5px 0px; /*상하바깥 여백을 5픽셀 좌우바깥여백은 0픽셀;
+color:#F00;}
+
+#sec_news dd{margin-left:0px; /*dd태그의 들여쓰기 사라짐*/color:#333;}
+#sec_news a{
+	color:#F00; text-decoration:none;/*하이퍼링크 된곳 밑줄선 없앰*/}
+#sec_news a:hover{
+	color:#F90; text-decoration:underline;/*밑줄선 나오게함*/}
+#sec_news dd a{
+	color:#333; text-decoration:none;}
+#sec_news dd a:hover{
+	color:F90; text-decoration:underline;}
+
+#news_notice table{
+	width:400px; border-collapse:colapse;
+	/* 테이블 테두리 선을 분리하지 않고 한줄로 그린다. 하지만 여기서는 테두리 선이 없어서 셀간의
+	간격, 셀테두리와 셀 내용간의 간격을 0으로 설정한 효과가 난다. 결국 테두리 공간을 없애는 것과 같다.*/
+	text-align:center;
+	
+}
+#news_notice td{
+	padding:6px 4px;/*상하 안여백은 6픽셀, 좌우 안여백은 4픽셀*/
+	border-bottom-width:1px;/*밑줄선 두께*/
+	border-bottom-style:dotted;/*밑줄선 스타일을 점선*/
+	border-bottom-color:#999;/*밑줄선 색*/
+	
+}
+#news_notice td.contxt{
+	background-image:url(../images/tr_back.gif);
+	background-repeat:no-repeat;
+	background-position:left center;
+	padding-left:15px;/*왼쪽 안여백*/
+	text-align:left; color:#333;
+}
+#news_notice a{ color:#333;text-decoration:none; }
+#news_notice a : hover{ text-decoration: none; color:#F90; }
