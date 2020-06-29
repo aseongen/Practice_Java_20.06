@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+table,th,td{
+border:1px solid blue;
+border-collapse: collpase; /*테두리선을 단일선으로 표시*/
+}
+th{
+background-color:green; color:white; height:30px;
+}
+/*문제)
+td 높이를 40픽셀로 처리하고 수직정렬로 아래쪽에 배치 */
+td{text-align:center;vertical-align:bottom; /*수직정렬로 아래쪽에 배치*/
+height:40px; }
+caption{caption-side:bottom;}
+
+/*문제) 표테이블 캡션 제목을 'VIP 고객 목록으로 HTML 태그를 사용해서 지정하시고, CSS 적용해서 캡션제목을 테이블 아래쪽에 배치하세요(캡션태그로 접근->타입 선택자)
+*/
+
+table{width:100%;}
+</style>
+</head>
+<body>
+<table border="1">
+<caption>VIP 고객 목록</caption>
+<tr>
+<th>이름</th> <th>이메일</th>
+</tr>
+<tr>
+<td>김형수</td><td>chu@naver.com</td>
+</tr>
+<tr>
+<td>나나</td><td>ddd@daum.net</td>
+</tr>
+</table>
+</body>
+</html>
