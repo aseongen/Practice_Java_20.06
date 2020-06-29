@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+/*type속성을 생략해도 스타일태그에서는 text/css 로 인식한다.*/
+body{font-size: medium;}/*중간 글자크기*/
+p#t1{font-size: 1.0em;}/*글자크기 단위에서 em은 상대적 크기이다.배수를 뜻함 %단위도 상대적 크기*/
+                       /*1em: 부모 요소 글자 크기와 같다. 기준: 부모 요소의 글자크기이다.*/
+#t2{font-size:1.5em;}/*부모 글자 크기보다 1.5배*/
+#t3{font-size:2.0em;}/*부모 글자 크기보다 2배*/
+</style>
+</head>
+<body>
+<p id="t1">첫번째 문단</p>
+<p id="t2">두번째 문단</p>
+<p id="t3">세번째 문단</p>
+</body>
+</html>
