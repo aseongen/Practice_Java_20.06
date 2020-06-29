@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+	<form method="post" action="#">
+		<table border="1">
+		
+			<tr><th colspan="2">checkbox & radio</th></tr>
+			<tr><th>이름</th>	<td><input type="text" name="name" size="10" /></td></tr>
+			<tr><th>학번</th>	<td><input type="text" name="hakbun" size="10" /></td></tr>
+			
+			<tr><th>성별</th>	<td>
+			    <input type="radio" name="gender" value="male" />남성
+			    <!-- radio :여러 항목중 하나만을 선택하게 하는 동그라미 버튼을 만든다. -->
+			    <input type="radio" name="gender" value="female" />여성 
+				</td>
+			</tr>
+			
+			<tr><th>과일 선택</th>
+				<td><input type="checkbox" name="fruit" value="apple" checked />사과
+					<input type="checkbox" name="fruit" value="grape" />포도 
+					<input type="checkbox" name="fruit" value="orange" />오렌지
+					<!-- checkbox : 복수개를 선택할 수 있는 네모버튼을 만든다. checked 속성을 사용하면 미리 선택되게한다. -->
+				</td></tr>
+			
+			<tr>
+				<th colspan="2"><input type="submit" value="저장" /> <!-- submit: 자료를 서버로 제출 --> 
+				<input type="reset" value="취소" />
+				<!-- reset: 입력박스 값을 취소, 즉 초기화 --></th>
+			</tr>
+			
+		</table>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
