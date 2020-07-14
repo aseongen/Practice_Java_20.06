@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script>
+var x=10, y=20;
+
+document.write((x>y) + "<br/>");//false
+document.write((x<y) + "<br/>");//true
+document.write((x==y) + "<br/>");//false
+document.write((x!=y) + "<br/>");//true
+
+x=3; y=4;
+document.write((x == 3) && (y==7)); //true&&false=>false
+document.write((x == 3) || (y==4)); //true||true=>true
+
+var age=28;
+var group=(age>=30)?"장년부":"청년부";
+document.write(age+"삶은" +group+"이다 <br>");
+
+var result=3+4*5;//연산 우선 순위에 의해서 곱셈연산이 덧셈연산보다 먼저 연산한다.
+//4*5=20 먼저 연산하고 20+3=23
+
+document.write(result);
+
+
+
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>내부 자바스크립트 방법</title>
+<script type="text/javascript">
+//자바 스크립트 한줄 주석문 기호
+/*
+ * 자바 스크립트 한줄이상 주석문 기호, type 속성을 생략해도 웹 브라우저가 기본언어로 자바스크립트로 인식한다.
+ */
+ document.write("<h1>Hello JavaScript!</h1>");//document는 자바스크립트 내장객체이고 write()메서드로 문자열을 출력
+ document.write("세미콜론(;)<br>");
+ document.write('짝은 따옴표로 문자열 처리 가능함.<br>');
+ 
+ var button=document.createElement('button');
+ button.textContent="안녕";
+ document.body.appendChild(button);
+ 
+ </script>
+</head>
+<body>
+
+</body>
+</html>

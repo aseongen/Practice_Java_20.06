@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script>
+
+var fruits =["apple","banana","orange"];//배열원소값을 직접 초기화 하면서 fruits 배열 생성
+document.write("fruits 배열 크기: " + fruits.length+"<hr/>");
+document.write(fruits[0]+"<br/>");//배열 주소 인덱스 번호는0부터 시작
+document.write(fruits[1]+"<br/>");
+document.write(fruits[2]+"<br/>");
+
+var comp=new Array();//Array 배열 내장 객체와  new 연산키워드로 배열명 comp 를 생성
+
+comp[0]="WaterMelon"; //문자열 자료형 값 저장
+comp[1]=15900;//정수 숫자값도 저장. 자바스크립트 배열원소값으로 복수개의 자료형을 동시 저장가능함
+comp[2]=3.14;//실수값 저장
+
+for(var i=0; i<comp.length; i++){
+	document.write(comp[i] + " ");
+}
+
+
+</script>
+
+
+</head>
+<body>
+</body>
+</html>

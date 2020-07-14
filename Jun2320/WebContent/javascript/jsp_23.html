@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<form name="myForm">
+ 필드1: <input name="a0" size="10"/><br/><br/>
+ 필드2: <input name="a1" size="10"/><br/><br/>
+ 필드3: <input name="a2" size="10"/><br/><br/>
+ <input type="button" value="초기화" onclick="init();"/>
+ 
+</form>
+<script>
+function init(){
+	for(var i=0;i<3;i++){
+		document.myForm["a" +i].value=i;
+		//myForm 은 form태그 네임 속성명, a0,a1,a2 는 input 태그 네임속성명
+		//myForm["a0"] a0키 이름으로 입력박스에 접근해서 값을 0을 초기화 설정
+	}
+}
+
+</script>
+</body>
+</html>

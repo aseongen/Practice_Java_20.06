@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<script>
+var myCar={make:"BMW",model:" x5 ", year:2020};
+//myCar객체 생성, make, model, year 속성정의. 속성값도 정의 
+var result="";
+
+for(var x in myCar){
+	/*for(변수 in 객체명){
+		for...in 루프 반복문으로 객체 안의 속성들에 대하여
+		어떤 처리를 반복하는 문이다.
+	}*/
+	alert(x); //변수에는 myCar 객체의 속성명이 저장된다.
+	result += myCar[x]+"";//객체의 모든 속성에 대하여 반복
+}
+document.write(result);//모든 속성값 출력
+
+</script>
+</body>
+</html>

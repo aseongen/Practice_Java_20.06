@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script>
+function calc(){//function 키워드로 calc()함수를 정의 
+	var x=document.getElementById('x').value;//id가 'x' 인 요소값을 가져와서 좌측변수에 적용
+	var y=document.getElementById('y').value;
+	var sum=parseInt(x)+parseInt(y);//정수숫자로 바꿔서 덧셈을 한다.
+	document.getElementById('sum').value=sum;
+	
+}
+</script>
+</head>
+<body>
+<h3>덧셈 계산기 </h3>
+<form>
+첫번째 정수: <input id="x"/><p><!-- p태그만 사용하면 두줄을 띄운다. input태그에서
+type 속성을 생략하면 기본값이 text 이다.-->
+두번째 정수:<input id="y"/><br/><br/>
+합계:<input id="sum"/><p>
+<input type="button" value="덧셈 계산" onclick="calc();"/>
+<!-- onclick="calc( );" 클릭사건 이벤트가 발생하면 calc()함수를 호출-->
+</form>
+</body>
+</html>

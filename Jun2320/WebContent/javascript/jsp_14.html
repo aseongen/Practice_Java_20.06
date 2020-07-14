@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script language="javascript">
+
+
+
+</script>
+
+</head>
+<body>
+<script>
+var msg= new Date();
+/*Date 날짜 내장 객체를 사용하여 시간 값을 구한뒤 if else if 다중 조건문을 사용하여 오전이면
+ * "Good Morning"오후이면 "Good Afternoon" ,  저녁이면 "good evening"을
+   msg 변수에 저장한 다음 alert() 내장 함수를 사용하여 메시지 창을 띄우세요
+ */
+var msgHour =msg.getHours();
+var msgMt =msg.getMinutes();
+
+if(msgHour <=12 && msgHour >=6){
+	document.write('Goondmorning'+ '현재 시간은 ' + '오전' + msgHour +'시' + msgMt +'분입니다.'); //기록
+	alert('Goondmorning'+ '현재 시간은 ' + '오전' + msgHour +'시' + msgMt +'분입니다.'); //경고창
+}else if (msgHour >=12 && msgHour<22) {
+	document.write('GoodAfternoon'+'현재 시간은' + '오후' +msgHour +'시' + msgMt + '분입니다.');
+	alert('GoodAfternoon'+'현재 시간은' + '오후' +msgHour +'시' + msgMt + '분입니다.');
+}else if(msgHour>=22 && msgHour<=24){
+	document.write('GoodEvening'+'현재 시간은 ' + '밤' +msgHour + '시' + msgMt +'분입니다');
+	alert('GoodEvening'+'현재 시간은 ' + '밤' +msgHour + '시' + msgMt +'분입니다');
+}else{
+	document.write('현재 시간은' + '새벽' + msgHour +'시' +msgMt + '분 입니다.');
+	alert('현재 시간은' + '새벽' + msgHour +'시' +msgMt + '분 입니다.');
+}//if else ()
+
+ 
+ 
+</script>
+</body>
+</html>

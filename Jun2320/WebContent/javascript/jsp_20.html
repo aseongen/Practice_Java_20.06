@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script>
+	var msg = "";
+	for (var i = 1; i <= 10; i++) {
+		if (i == 4)
+			break;//반복문 중단
+		msg += i + " ";//1,2,3
+	}
+	document.write(msg);
+	/*문제) for, msg, continue 를 활용하여 1부터10까지 반복하면서 4의 배수만 빼고 나머지 
+	 * 반복한 숫자를 누적해서 msg에 저장한 다음 출력해보자
+	 */s
+	document.write("<br/>");
+
+	var msg = "";
+
+	for (var j = 1; j <= 10; j++) {
+		if (j % 4 != 0) {
+			msg += j + " ";
+		}
+	}
+	document.write(msg);
+</script>
+</head>
+<body>
+</body>
+</html>
